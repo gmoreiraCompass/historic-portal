@@ -6,8 +6,8 @@
       - [ ] Logo component
       - [ ] Amount component
       - [ ] Profile component
-    - [ ] Create Navigation
-      - [ ] Name component
-      - [ ] Links component
+    - [x] Create Navigation
+      - [x] Name component
+      - [x] Links component
     - [ ] Create Sidebar
     - [ ] Create Main
