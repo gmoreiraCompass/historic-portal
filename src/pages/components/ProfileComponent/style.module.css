@@ -6,6 +6,8 @@
     color: #000;
     background-color: #fff;
     border-radius: 15px;
+    min-width: 220px;
+    padding: 10;
 }
 
 .userName{
@@ -35,7 +37,7 @@
 }
 
 .secaoBancaria{
-    
+    font-size: 14px;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
@@ -52,8 +54,6 @@
 }
 
 .secaoBancaria div{
-    
-    
     text-align: center;
     width: 70px;
     height: 60px;
@@ -73,6 +73,14 @@
     text-decoration: none;
     color: #000;
     width: 100%;
+}
+
+.documentacao a:hover{
+    background: var(--gray-scale-50, #F5F5F5);
+}
+
+.documentacao a:nth-child(5):hover{
+    border-radius: 0 0 15px 15px;
 }
 
 .documentacao p{

@@ -6,8 +6,8 @@ export function Profile (){
             <section className={style.userName}>
                 <img src="./images/pessoa.jpg" alt="" />
                 <div>
-                    <p>Alessandra dos Santos</p>
-                    <p>alessandra.santos</p>
+                    <p>Nome do Usuário</p>
+                    <p>nome.sobrenome</p>
                 </div>
             </section>
             <section className={style.secaoBancaria}>

@@ -6,13 +6,15 @@ interface BtnMenuProps {
 }
 
 export function BtnMenu({ setIsActive, active }: BtnMenuProps) {
+    // const [arrowStyle, setArrowStyle] = 
+
   const onClick = () => {
     setIsActive(!active);
   };
 
   return (
     <button className={style.botao} onClick={onClick}>
-      <img src="images/arrow-down-sign-to-navigate.png" alt="seta" />  
+      <img className={active?style.downArrow:style.upArrow} src="images/arrow-down-sign-to-navigate.png" alt="seta" />  
       <img src="images/user.png" alt="foto perfil" />
     </button>
   );
