@@ -1,0 +1,23 @@
+.menuContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    background-color: none;
+}
+
+.active{
+    opacity: 1;
+    visibility: visible;
+    height: 500px;
+}
+
+.inactive{
+   
+        opacity: 0;
+        height: 0px;
+    
+}

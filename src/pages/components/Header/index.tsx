@@ -1,4 +1,5 @@
 import Styles from '../../../../styles/Header.module.css'
+import { MenuProfile } from '../MenuProfile/Index'
 
 export function Header() {
     return (
@@ -7,8 +8,7 @@ export function Header() {
                 <img src="./images/Logo PicPay.svg" alt="" />
             </div>
             <div>
-                <img src="./images/visualizar.svg" alt="" />
-                <img src="./images/Dropdown Header Account.svg" alt="" />
+                <MenuProfile/>
             </div>
         </div>
     )
