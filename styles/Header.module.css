@@ -1,0 +1,8 @@
+.header {
+    padding-top: 17.250px;
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    min-height: 69px;
+    max-height: 69px;
+}

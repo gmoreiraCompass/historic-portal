@@ -1,0 +1,39 @@
+.menuButton {
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.menuButton:active {
+    background: #8d8b8b;
+    transition: background-color 0.2s ease;
+}
+
+.downArrow {
+    transform: rotate(180deg);
+    transition: transform 0.2s ease;
+    margin-left: 15%;
+}
+
+.upArrow {
+    margin-left: 15%;
+    transition: transform 0.2s ease;
+}
+
+.menuButton img:nth-child(2) {
+    width: 25px;
+    border-radius: 50%;
+}
+
+.userIcon {
+    display: flex;
+    align-items: center;
+    margin-right: -9%;
+}
