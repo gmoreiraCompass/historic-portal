@@ -3,12 +3,11 @@ import style from "./style.module.css"
 import { ArrowDownIcon, UserIcon } from "../../../components/Icons";
 
 interface BtnMenuProps {
-  setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
+  setIsActive: (active: boolean) => boolean;
   active: boolean;
 }
 
 export default function BtnMenu({ setIsActive, active }: BtnMenuProps) {
-
   const onClick = () => {
     setIsActive(!active);
   };
@@ -17,7 +16,7 @@ export default function BtnMenu({ setIsActive, active }: BtnMenuProps) {
     <button className={style.menuButton} onClick={onClick}>
       <ArrowDownIcon className={active ? style.downArrow : style.upArrow} />
       <div className={style.userIcon}>
-        <UserIcon/>
+        <UserIcon />
       </div>
     </button>
   );
