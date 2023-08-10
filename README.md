@@ -9,5 +9,10 @@
     - [x] Create Navigation
       - [x] Name component
       - [x] Links component
-    - [ ] Create Sidebar
+    - [x] Create Basic API
     - [ ] Create Main
+      - [ ] Breadcrumb component
+      - [ ] Title component
+      - [ ] Tab component
+      - [ ] Sidebar Filter component
+      - [ ] Content component
