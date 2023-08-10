@@ -5,15 +5,14 @@
     align-items: center;
     width: 100px;
     height: 40px;
-    background-color: #f3eeee;
-    border: none;
+    background-color: #fff;
+    border: 1px solid #ebebeb;
     border-radius: 20px;
-    border: 1px solid var(--gray-scale-200, #EBEBEB);
     cursor: pointer;
 }
 
 .menuButton:active {
-    background: var(--gray-scale-50, #8d8b8b);
+    background: #8d8b8b;
     transition: background-color 0.2s ease;
 }
 
@@ -33,7 +32,7 @@
     border-radius: 50%;
 }
 
-.userIcon{
+.userIcon {
     display: flex;
     align-items: center;
     margin-right: -9%;

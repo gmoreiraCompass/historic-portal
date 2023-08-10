@@ -1,11 +1,11 @@
-import { ReceiptIcon } from "../../../components/Icons"
-import style from "./style.module.css"
+import { ReceiptIcon, UserIcon } from "../../../components/Icons";
+import style from "./style.module.css";
 
 export default function Profile() {
     return (
         <div className={style.profileContainer}>
             <section className={style.userName}>
-                <img src="./images/pessoa.jpg" alt="Foto usuário" />
+                <UserIcon />
                 <div>
                     <p>Nome do Usuário</p>
                     <p>nome.sobrenome</p>
@@ -45,5 +45,5 @@ export default function Profile() {
                 </a>
             </section>
         </div>
-    )
+    );
 }
