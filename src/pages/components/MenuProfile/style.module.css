@@ -8,6 +8,10 @@
     background-color: none;
 }
 
+.menuContainer div:nth-child(1){
+    display: flex;
+}
+
 .active {
     opacity: 1;
     visibility: visible;

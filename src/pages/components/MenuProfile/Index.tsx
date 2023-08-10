@@ -1,16 +1,17 @@
 import { useRef, useState } from "react";
-import { BtnMenu } from "../BtnMenu/Index";
-import { Profile } from "../ProfileComponent";
 import style from "./style.module.css";
+import { EyeOffIcon } from "../../../components/Icons";
+import Profile from "../ProfileComponent/index";
+import BtnMenu from "../BtnMenu/Index";
 
-export function MenuProfile() {
+export default function MenuProfile() {
     const dropDownRef = useRef(null);
     const [isActive, setIsActive] = useState(false);
-    console.log(isActive);
 
     return (
         <div className={style.menuContainer}>
             <div>
+                <EyeOffIcon/>
                 <BtnMenu setIsActive={setIsActive} active={isActive} />
             </div>
             <nav

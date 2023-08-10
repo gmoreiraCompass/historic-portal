@@ -1,21 +1,24 @@
 import React from "react";
 import style from "./style.module.css"
+import { ArrowDownIcon, UserIcon } from "../../../components/Icons";
+
 interface BtnMenuProps {
   setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
   active: boolean;
 }
 
-export function BtnMenu({ setIsActive, active }: BtnMenuProps) {
-    // const [arrowStyle, setArrowStyle] = 
+export default function BtnMenu({ setIsActive, active }: BtnMenuProps) {
 
   const onClick = () => {
     setIsActive(!active);
   };
 
   return (
-    <button className={style.botao} onClick={onClick}>
-      <img className={active?style.downArrow:style.upArrow} src="images/arrow-down-sign-to-navigate.png" alt="seta" />  
-      <img src="images/user.png" alt="foto perfil" />
+    <button className={style.menuButton} onClick={onClick}>
+      <ArrowDownIcon className={active ? style.downArrow : style.upArrow} />
+      <div className={style.userIcon}>
+        <UserIcon/>
+      </div>
     </button>
   );
 }

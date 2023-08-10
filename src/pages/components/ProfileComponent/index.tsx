@@ -1,16 +1,17 @@
+import { ReceiptIcon } from "../../../components/Icons"
 import style from "./style.module.css"
 
-export function Profile (){
+export default function Profile() {
     return (
-        <div className={style.perfilContainer}>
+        <div className={style.profileContainer}>
             <section className={style.userName}>
-                <img src="./images/pessoa.jpg" alt="" />
+                <img src="./images/pessoa.jpg" alt="Foto usuário" />
                 <div>
                     <p>Nome do Usuário</p>
                     <p>nome.sobrenome</p>
                 </div>
             </section>
-            <section className={style.secaoBancaria}>
+            <section className={style.bankInfo}>
                 <div>
                     <p>Agência</p>
                 </div>
@@ -21,29 +22,28 @@ export function Profile (){
                     <p>Instituição</p>
                 </div>
             </section>
-            <section className={style.documentacao}>
+            <section className={style.bankDocumentation}>
                 <a href="#">
-                    <img src="./images/extrato.svg" alt="extrato" />
+                    <ReceiptIcon />
                     <p>Extrato Banco Original</p>
                 </a>
                 <a href="#">
-                    <img src="./images/extrato.svg"alt="historico" />
+                    <ReceiptIcon />
                     <p>Histórico Original (Arquivos pdf)</p>
                 </a>
                 <a href="#">
-                    <img src="./images/extrato.svg" alt="open Finance" />
+                    <ReceiptIcon />
                     <p>Open Finance</p>
                 </a>
                 <a href="#">
-                    <img src="./images/extrato.svg" alt="ajuda" />
+                    <ReceiptIcon />
                     <p>Ajuda</p>
                 </a>
                 <a href="#">
-                    <img src="./images/extrato.svg" alt="sair" />
+                    <ReceiptIcon />
                     <p>Sair</p>
                 </a>
             </section>
-            
         </div>
     )
 }

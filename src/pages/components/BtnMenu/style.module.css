@@ -1,43 +1,40 @@
-.botao {
+.menuButton {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 2px;
     align-items: center;
     width: 100px;
     height: 40px;
-    /* background: var(--gray-scale-200, #f3eeee); */
     background-color: #f3eeee;
     border: none;
     border-radius: 20px;
     border: 1px solid var(--gray-scale-200, #EBEBEB);
-
     cursor: pointer;
 }
 
-.botao:active {
+.menuButton:active {
     background: var(--gray-scale-50, #8d8b8b);
     transition: background-color 0.2s ease;
 }
 
 .downArrow {
-    width: 25px;
-    border-radius: 50%;
     transform: rotate(180deg);
     transition: transform 0.2s ease;
+    margin-left: 15%;
 }
 
 .upArrow {
-    width: 25px;
-    border-radius: 50%;
+    margin-left: 15%;
     transition: transform 0.2s ease;
 }
 
-.botao img:nth-child(2) {
+.menuButton img:nth-child(2) {
     width: 25px;
     border-radius: 50%;
 }
 
-/* .botao img:nth-child(1){
-    width: 25px;
-    border-radius: 50%;
-} */
+.userIcon{
+    display: flex;
+    align-items: center;
+    margin-right: -9%;
+}
