@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import style from "./style.module.css";
 import { EyeOffIcon } from "../../../components/Icons";
 import Profile from "../ProfileComponent/index";
-import BtnMenu from "../BtnMenu/Index";
+import BtnMenu from "../BtnMenu";
 
 export default function MenuProfile() {
     const dropDownRef = useRef(null);
