@@ -1,25 +1,37 @@
 import { ReceiptIcon, UserIcon } from "../../../components/Icons";
 import style from "./style.module.css";
 
-export default function Profile() {
+interface User {
+    name: string,
+    email: string,
+    bankBranch: string,
+    accountNumber: string
+}
+
+export default function Profile({name, email, bankBranch, accountNumber}:User) {
+    
+
     return (
         <div className={style.profileContainer}>
             <section className={style.userName}>
                 <UserIcon />
                 <div>
-                    <p>Nome do Usuário</p>
-                    <p>nome.sobrenome</p>
+                    <p>{name}</p>
+                    <p>{email}</p>
                 </div>
             </section>
             <section className={style.bankInfo}>
                 <div>
                     <p>Agência</p>
+                    <p>{bankBranch}</p>
                 </div>
                 <div>
                     <p>Conta</p>
+                    <p>{accountNumber}</p>
                 </div>
                 <div>
                     <p>Instituição</p>
+                    <p>PicPay</p>
                 </div>
             </section>
             <section className={style.bankDocumentation}>

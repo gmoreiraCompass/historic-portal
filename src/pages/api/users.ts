@@ -18,12 +18,14 @@ export default async function handler(
         const documentsFetched = await data.json();
 
         const usersWithDocuments = users.map(
-            ({ id, email, name, documents }) => {
+            ({ id, email, name, documents,bankBranch, accountNumber }) => {
                 documents.push(...documentsFetched);
                 const user = {
                     id,
                     email,
                     name,
+                    bankBranch,
+                    accountNumber,
                     documents,
                 };
                 return user;

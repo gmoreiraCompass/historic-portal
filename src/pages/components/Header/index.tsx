@@ -1,6 +1,6 @@
 import styles from '../../../../styles/Header.module.css'
 import {PicPayIcon} from '../../../components/Icons'
-import MenuProfile from '../MenuProfile/Index'
+import MenuProfile from '../MenuProfile'
 
 export default function Header() {
     return (

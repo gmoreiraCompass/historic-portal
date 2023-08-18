@@ -45,6 +45,8 @@ export const users: User[] = [
         id: "aa9e519f-bcc0-4408-990a-c6ec90b4bfbe",
         name: "Eliza Samúdio",
         email: "eliza@email.com",
+        bankBranch: "123-4567",
+        accountNumber:"56789012",
         documents: [],
     },
 ];
