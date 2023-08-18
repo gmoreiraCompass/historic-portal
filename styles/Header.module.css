@@ -1,8 +1,16 @@
 .header {
-    padding-top: 17.250px;
+    padding: 1rem 3rem;
     display: flex;
     justify-content: space-between;
-    background: #FFFFFF;
+    flex-direction: column;
+    gap: 2rem;
+    background: #ffffff;
     min-height: 69px;
     max-height: 69px;
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
 }
