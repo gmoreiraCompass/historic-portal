@@ -18,3 +18,14 @@ a {
 * {
     box-sizing: border-box;
 }
+
+.slick-dots{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    
+}
+
+.slick-dots li{
+    width: 100%;
+}

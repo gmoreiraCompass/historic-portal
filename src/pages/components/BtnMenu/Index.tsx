@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./style.module.css"
 import { ArrowDownIcon, UserIcon } from "../../../components/Icons";
-import { FunctionComponent } from "react";
+
 
 interface BtnMenuProps {
   setIsActive: (active: boolean) => void;
