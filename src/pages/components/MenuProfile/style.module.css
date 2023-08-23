@@ -16,6 +16,7 @@
     opacity: 1;
     visibility: visible;
     height: 500px;
+    z-index: 2;
 }
 
 .inactive {

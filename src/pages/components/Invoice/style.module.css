@@ -1,0 +1,17 @@
+.Invoice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Invoice button {
+    border: none;
+    border-radius: 8px;
+    background: var(--primary-10, #E9F3EF);
+    color: #136C4C;
+    font-weight:800;
+    cursor: pointer;
+    padding: 9px 16px;
+    height: 36px;
+}
+

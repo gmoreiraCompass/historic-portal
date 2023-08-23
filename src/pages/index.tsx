@@ -80,6 +80,16 @@ const tabs = [
 ];
 
 const Home: NextPage = () => {
+    const settings = {
+        dots: true,
+        dotsClass: "slick-dots slick-thumb",
+        infinite: false,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        // appendDots: (dots: [any]) => <nav className={styles.tabs}>{dots}</nav>,
+        customPaging: (i: number) => <Tabs label={tabs} indexDots={i} />,
+    };
     return (
         <div className={styles.container}>
             <Header />
