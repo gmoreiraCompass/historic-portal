@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { TabsProps } from "../../../types/Tabs";
 import styles from "./styles.module.css";
 
@@ -8,11 +8,19 @@ interface IProps {
 
 const Tabs = ({ data: tabs, horizontalScroll }: TabsProps & IProps) => {
     const [activeTab, setActiveTab] = useState("");
+    const navRef = useRef<HTMLDivElement>(null);
+    const tagRefs = useRef<HTMLSpanElement[]>([]);
 
     function scrollNav() {
-        scrollTo({
-            behavior: "smooth",
-            top: 1000,
+        const observer = new IntersectionObserver((entries) => {
+            console.log("###", entries);
+        });
+
+        tagRefs.current.map((entry) => {
+            observer.observe(entry);
+            observer.takeRecords();
+
+            console.log("###", entry.nextSibling);
         });
     }
 
@@ -24,12 +32,15 @@ const Tabs = ({ data: tabs, horizontalScroll }: TabsProps & IProps) => {
     return (
         <div className={styles.tabs}>
             {horizontalScroll && <button onClick={scrollNav}>{">"}</button>}
-            <div className={styles.tabNav}>
-                {tabs.map((tab) => {
+            <div className={styles.tabNav} ref={navRef}>
+                {tabs.map((tab, idx) => {
                     return (
                         <span
                             key={tab.id}
                             onClick={() => setActiveTab(`${tab.id}`)}
+                            ref={(el) =>
+                                el ? (tagRefs.current[idx] = el) : null
+                            }
                         >
                             {tab.label}
                         </span>
